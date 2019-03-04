@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e44bae-43ef-4628-a512-09496237180d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ArrayQueue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryHeapQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetworkRoutingSolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkRoutingSolver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Proj3GUI.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -34,6 +38,8 @@
                 <element signature="e#5526#6131#0" />
                 <element signature="e#6172#7116#0" />
                 <element signature="e#7157#7589#0" />
+                <element signature="e#7676#8757#0" />
+                <element signature="e#8797#10066#0" />
                 <element signature="e#10106#10486#0" />
                 <element signature="e#10547#11163#0" />
                 <element signature="e#11212#12660#0" />
@@ -45,16 +51,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NetworkRoutingSolver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="731">
+              <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
               <folding>
                 <element signature="e#21#45#0" expanded="true" />
-                <element signature="e#410#1411#0" />
-                <element signature="e#864#1270#0" />
-                <element signature="e#2769#2978#0" />
+                <element signature="e#182#234#0" />
+                <element signature="e#288#356#0" />
+                <element signature="e#435#1487#0" />
+                <element signature="e#1701#1784#0" />
+                <element signature="e#2123#2488#0" />
+                <element signature="e#2706#2742#0" />
+                <element signature="e#3009#3052#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ArrayQueue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +85,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeWrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinaryHeapQueue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -94,14 +125,17 @@
       <list>
         <option value="$PROJECT_DIR$/CS312Graph.py" />
         <option value="$PROJECT_DIR$/nodeWrapper.py" />
+        <option value="$PROJECT_DIR$/BinaryHeap.py" />
+        <option value="$PROJECT_DIR$/ArrayQueue.py" />
+        <option value="$PROJECT_DIR$/BinaryHeapQueue.py" />
         <option value="$PROJECT_DIR$/NetworkRoutingSolver.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1168" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="width" value="1169" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -196,18 +230,18 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.42101786" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42101786" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32288828" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.48228884" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32288828" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48228884" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32833788" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -250,10 +284,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayQueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nodeWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryHeapQueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetworkRoutingSolver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+          <folding>
+            <element signature="e#21#45#0" expanded="true" />
+            <element signature="e#182#234#0" />
+            <element signature="e#288#356#0" />
+            <element signature="e#435#1487#0" />
+            <element signature="e#1701#1784#0" />
+            <element signature="e#2123#2488#0" />
+            <element signature="e#2706#2742#0" />
+            <element signature="e#3009#3052#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -278,25 +346,14 @@
             <element signature="e#5526#6131#0" />
             <element signature="e#6172#7116#0" />
             <element signature="e#7157#7589#0" />
+            <element signature="e#7676#8757#0" />
+            <element signature="e#8797#10066#0" />
             <element signature="e#10106#10486#0" />
             <element signature="e#10547#11163#0" />
             <element signature="e#11212#12660#0" />
             <element signature="e#12662#12752#0" />
             <element signature="e#12829#13551#0" />
             <element signature="e#13585#16754#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NetworkRoutingSolver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="e#21#45#0" expanded="true" />
-            <element signature="e#410#1411#0" />
-            <element signature="e#864#1270#0" />
-            <element signature="e#2769#2978#0" />
           </folding>
         </state>
       </provider>
