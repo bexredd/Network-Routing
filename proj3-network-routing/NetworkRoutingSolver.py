@@ -2,12 +2,10 @@
 
 
 from CS312Graph import *
-from nodeWrapper import NodeWrapper
 from ArrayQueue import *
 from BinaryHeapQueue import *
 import time
 import math
-import copy
 
 
 class NetworkRoutingSolver:
@@ -67,7 +65,7 @@ class NetworkRoutingSolver:
 
             u = queue.delete_min()
             for n in u.node.neighbors:
-                v = n.dest.node_id;
+                v = n.dest.node_id
                 new_distance = distances[u.node.node_id] +n.length
                 if distances[v] > new_distance:
                     distances[v] = new_distance
@@ -80,44 +78,3 @@ class NetworkRoutingSolver:
 
         t2 = time.time()
         return t2-t1
-
-
-    # def array_delete_min(self, nodes):
-    #         # return node of smallest distance and updated node list. Then delete the node from the queue
-    #         index = nodes.index(min(nodes, key=lambda n: n.dist))
-    #         u = nodes[index]
-    #         del nodes[index]
-    #         return u, nodes
-
-    # def array_shortest_paths(self, srcIndex):
-    #             # create a list to hold the distances and set all to infinity. Also set source to 0
-    #     # also create a list to hold the previous node index for each update.
-    #     distances= [math.inf] * len(self.network.nodes)
-    #     distances[srcIndex] = 0
-    #     previous = [math.inf] * len(self.network.nodes)
-    #
-    #     # unordered array queue, set all nodes and set distance to infinity, set source distance to 0
-    #     nodes = list()
-    #     for n in self.network.nodes:
-    #         nodes.append(NodeWrapper(n, math.inf))
-    #     nodes[srcIndex].dist = 0
-    #
-    #     # while there are still nodes in the queue
-    #     while len(nodes) != 0:
-    #         # get the node with the smallest distance and update queue
-    #         u, nodes = self.array_delete_min(nodes)
-    #
-    #         # visit each neighbor and update distance
-    #         for n in u.node.neighbors:
-    #             v = n.dest.node_id
-    #             if distances[v] > distances[u.node.node_id] + n.length:
-    #                 # if still in queue update distance..
-    #                 x = next((i for i, n in enumerate(nodes) if n.node.node_id == v), -1)
-    #                 if x != -1:
-    #                     nodes[x].dist = distances[u.node.node_id]+n.length
-    #                 distances[v] = distances[u.node.node_id] + n.length
-    #                 previous[v] = u.node.node_id
-    #
-    #     # set distance and previous nodes for use in get shortest path
-    #     self.distances = distances
-    #     self.previous_nodes = previous

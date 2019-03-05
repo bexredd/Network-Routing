@@ -1,16 +1,20 @@
 from nodeWrapper import *
 import math
 
+
 class ArrayQueue:
         def __init__(self, nodes, src_index):
             self.queue = self.init_queue(nodes,src_index)  # list of nodes that will be edited
 
-        def init_queue(self,nodes, src_index):
+        def init_queue(self, nodes, src_index):
             queue = list()
             for n in nodes:
                 queue.append(NodeWrapper(n, math.inf))
             queue[src_index].dist = 0
             return queue
+
+        def size(self):
+            return len(self.queue)
 
         # if we needed this we would insert to the end of the array
         def insert(self):
@@ -29,6 +33,3 @@ class ArrayQueue:
             u = self.queue[index]
             del self.queue[index]
             return u
-
-        def size(self):
-            return len(self.queue)

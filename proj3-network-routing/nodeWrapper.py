@@ -1,6 +1,3 @@
-
-from CS312Graph import *
-
 class NodeWrapper:
     def __init__(self, node, dist):
         self.node = node
