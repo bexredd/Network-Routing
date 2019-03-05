@@ -22,19 +22,17 @@ class NetworkRoutingSolver:
 
         # set up edges and length to return
         path_edges = []
-        total_length = 0
+        total_length = self.distances[destIndex]
 
         # start at the destination node and move through previous array.
         index = destIndex
         prev = self.previous_nodes[destIndex]
 
-        total_length = self.distances[index];
-
         while prev != math.inf:
             # get edge, add to path and add length to total length
             edge_index = next((i for i, n in enumerate(self.network.nodes[prev].neighbors) if n.dest.node_id == index), -1)
             edge = self.network.nodes[prev].neighbors[edge_index]
-            path_edges.append( (edge.src.loc, edge.dest.loc, '{:.0f}'.format(edge.length)) )
+            path_edges.append((edge.src.loc, edge.dest.loc, '{:.0f}'.format(edge.length)))
 
             # move to prev node and repeat.
             index = prev
@@ -43,7 +41,7 @@ class NetworkRoutingSolver:
 
         # if you didn't get back to the source the node is unreachable
         if index != self.source:
-            return {'cost': math.inf, 'path': path_edges}
+            return {'cost': math.inf, 'path': []}
         return {'cost': total_length, 'path': path_edges}
 
     def computeShortestPaths( self, srcIndex, use_heap):
