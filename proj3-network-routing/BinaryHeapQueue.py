@@ -54,8 +54,11 @@ class BinaryHeap:
         while True:
             child1_idx = index*2+1
             child2_idx = index*2+2
+
+            # if there is no child return
             if child1_idx >= len(self.queue) or child2_idx >= len(self.queue):
                 return
+            # if both children are smaller swap with the smaller of the 2
             elif self.queue[index].dist > self.queue[child1_idx].dist and self.queue[index].dist > self.queue[child2_idx].dist:
                 if self.queue[child2_idx].dist < self.queue[child1_idx].dist:
                     curr = self.queue[index]
@@ -67,16 +70,19 @@ class BinaryHeap:
                     self.queue[index] = self.queue[child1_idx]
                     self.queue[child1_idx] = curr
                     index = child1_idx
+            # if the left child is smaller swap with it
             elif self.queue[index].dist > self.queue[child1_idx].dist:
                 curr = self.queue[index]
                 self.queue[index] = self.queue[child1_idx]
                 self.queue[child1_idx] = curr
                 index = child1_idx
+            # if the right child is smaller swap with it
             elif self.queue[index].dist > self.queue[child2_idx].dist:
                 curr = self.queue[index]
                 self.queue[index] = self.queue[child2_idx]
                 self.queue[child2_idx] = curr
                 index = child2_idx
+            # if none of these are true, then return because its in the right spot.
             else:
                 return
 
