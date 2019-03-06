@@ -14,12 +14,11 @@ class ArrayQueue:
             return dict
 
         def size(self):
-            #return len(self.queue)
             return len(self.queue)
 
         # if we needed this we would insert to the end of the array
-        def insert(self):
-            pass
+        def insert(self, node, distance):
+            self.queue[node.node_id] = NodeWrapper(node, distance)
 
         # update the distance of the node.
         def decrease_key(self, node_id, value):
